@@ -1,0 +1,56 @@
+$c1:rgb(73, 36, 62);
+$c2:rgb(112, 66, 100);
+$c3:rgb(187, 132, 147);
+$c4:rgb(219, 175, 160);
+
+@font-face {
+    font-family: "porsche";
+    src: url('../src/font/911porschav3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1{
+    font-family: "porsche";
+    display: block;
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 25px;
+    height: 100px;
+}
+
+.box-header{
+    font-family: "porsche";
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 45px;
+    border-bottom: 0.3px solid black;
+}
+
+.box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.item{
+    
+    .like{
+        width: 50px;
+        height: 50px;
+    }
+    .cars{
+        width: 400px;
+        height: 200px;
+    }
+}
+.remove{
+    width: 50px;
+    height: 50px;
+}
