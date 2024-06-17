@@ -6,6 +6,7 @@
     <title>Shoping Cart</title>
     <link rel="stylesheet" href="../css/cart.css">
     <link rel="icon" href="../src/logo/porsche_logo1.png" type="icon">
+    
 </head>
 <body>
     <header>
@@ -37,19 +38,22 @@
                 <h3>911-gt3rs</h3>
                 <p>A high-performance, track-focused variant of the Porsche 911.</p>
                 <img class="cars" src="../src/cars/porsche-model-911-gt3rs.png" alt="porsche-model-911-gt3rs">
-                <img class="like" src="../src/icons/heart-regular.svg">
+                <div class="like"><i class="fa-regular fa-heart" onclick="like()"></i></div>
             </div>
             <div class="price">
                 <p>$223,800</p>
             </div>
             <div class="qt">
+                <!-- <i class="fa-solid fa-caret-up"></i>
                 <p>1</p>
+                <i class="fa-solid fa-caret-down"></i> -->
+                <form><input type="number" value="1" id="qt1"></form>
             </div>
             <div class="total">
                 <p>$223,800</p>
             </div>
             <div class="remove">
-                <img src="../src/icons/circle-minus-solid.svg">
+                <i class="fa-solid fa-circle-minus"></i>
             </div>
         </div>
         <div class="box">
@@ -57,19 +61,18 @@
                 <h3>918 spyder</h3>
                 <p> A limited-production hybrid supercar with cutting-edge technology.</p>
                 <img class="cars" src="../src/cars/porsche-model-918-spyder.png" alt="porsche-model-918-spyder">
-                <img class="like" src="../src/icons/heart-regular.svg">
+                <div class="like"><i class="fa-regular fa-heart"></i></div>
             </div>
             <div class="price">
                 <p>$845,000</p>
             </div>
             <div class="qt">
-                <p>1</p>
-            </div>
+                <form><input type="number" value="1" id="qt1"></form>            </div>
             <div class="total">
                 <p>$845,000</p>
             </div>
             <div class="remove">
-                <img src="../src/icons/circle-minus-solid.svg">
+                <i class="fa-solid fa-circle-minus"></i>
             </div>
         </div>
         <div class="box">
@@ -77,19 +80,18 @@
                 <h3>cayenne</h3>
                 <p>A mid-size luxury SUV with sporty handling and powerful engines.</p>
                 <img class="cars" src="../src/cars/porsche-model-cayenne.png" alt="porsche-model-cayenne">
-                <img class="like" src="../src/icons/heart-regular.svg">
+                <div class="like"><i class="fa-regular fa-heart"></i></div>
             </div>
             <div class="price">
                 <p>$126,895</p>
             </div>
             <div class="qt">
-                <p>1</p>
-            </div>
+                <form><input type="number" value="1" id="qt1"></form>    </div>
             <div class="total">
                 <p>$126,895</p>
             </div>
             <div class="remove">
-                <img src="../src/icons/circle-minus-solid.svg">
+                <i class="fa-solid fa-circle-minus"></i>
             </div>
         </div>
         <div class="box">
@@ -97,47 +99,68 @@
                 <h3>panamera</h3>
                 <p>A luxury four-door sedan combining performance with comfort.</p>
                 <img class="cars" src="../src/cars/porsche-model-panamera.png" alt="porsche-model-panamera">
-                <img class="like" src="../src/icons/heart-regular.svg">
+                <div class="like"><i class="fa-regular fa-heart"></i></div>
             </div>
             <div class="price">
                 <p>$190,400</p>
             </div>
             <div class="qt">
-                <p>1</p>
-            </div>
+                <form><input type="number" value="1" id="qt1"></form>          </div>
             <div class="total">
                 <p>$190,400</p>
             </div>
             <div class="remove">
-                <img src="../src/icons/circle-minus-solid.svg">
+                <i class="fa-solid fa-circle-minus"></i>
             </div>
         </div>
         <div class="box">
             <div class="item">
                 <h3>taycan</h3>
-                <p> Porsche's fully electric sports sedan, known for its performance and innovation.</p>
+                <p> Porsche's fully electric sports sedan.</p>
                 <img class="cars" src="../src/cars/porsche-model-taycan.png" alt="porsche-model-taycan">
-                <img class="like" src="../src/icons/heart-regular.svg">
+                <div class="like">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
             </div>
             <div class="price">
                 <p>$92,550</p>
             </div>
             <div class="qt">
-                <p>1</p>
+                <form><input type="number" value="1" id="qt1"></form>         </div>
+            <div class="total">
+                <p>$92,550</p>
+            </div>
+            <div class="remove">
+                <i class="fa-solid fa-circle-minus"></i>
+            </div>
+        </div>
+        <div class="box-footer">
+            <div class="item">
+                <h3>taycan</h3>
+                <p> Porsche's fully electric sports sedan.</p>
+                <img class="cars" src="../src/cars/porsche-model-taycan.png" alt="porsche-model-taycan">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="price">
+                <p>TOTAL:</p>
+            </div>
+            <div class="qt">
+                <p></p>
             </div>
             <div class="total">
                 <p>$92,550</p>
             </div>
             <div class="remove">
-                <img  src="../src/icons/circle-minus-solid.svg">
+                <i class="fa-solid fa-circle-minus"></i>
             </div>
         </div>
     </section>
     <footer>
-        <button id="checkout"></button>
-        <button id="back"></button>
+        <button id="back" value="BACK">BACK</button>
+        <button id="checkout" value="CHECKOUT">CHECKOUT</button>
     </footer>
 
     <script src="../js/cart.js"></script>
+    <script src="https://kit.fontawesome.com/a4f9572751.js" crossorigin="anonymous"></script>
 </body>
 </html>

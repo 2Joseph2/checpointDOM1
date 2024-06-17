@@ -1,7 +1,4 @@
-$c1:rgb(73, 36, 62);
-$c2:rgb(112, 66, 100);
-$c3:rgb(187, 132, 147);
-$c4:rgb(219, 175, 160);
+
 
 @font-face {
     font-family: "porsche";
@@ -21,7 +18,7 @@ h1{
     padding: 25px;
     margin-bottom: 25px;
     height: 100px;
-}
+    color:  rgb(255, 85, 0);}
 
 .box-header{
     font-family: "porsche";
@@ -30,6 +27,7 @@ h1{
     align-items: center;
     margin-bottom: 45px;
     border-bottom: 1.3px solid black;
+    
     .item{
         .cars2{
             visibility: hidden;
@@ -53,17 +51,99 @@ h1{
         .like{
             width: 50px;
             height: 50px;
+            font-size: 50px;
         }
         .cars{
             width: 400px;
             height: 200px;
         }
     }
+    .qt{
+        form{
+            input{
+                width: 50px;
+                height: 50px;
+                border-radius: 5px;
+                text-align: center;
+                border: none;
+                color: white;
+                background-color: black;
+            }
+        }
+    }
     .remove{
         width: 50px;
         height: 50px;
         margin-right: 50px;
+        font-size: 50px;
+    }
+    &:hover{
+        background-color: black;
+        color: rgb(255, 85, 0);
     }
 }
 
 
+
+.box-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+    margin-bottom: 45px;
+    
+    .item{
+        visibility: hidden;
+        margin-left: 50px;
+        .like{
+            width: 50px;
+            height: 0px;
+            visibility: hidden;
+        }
+    }
+    .price{
+        color: rgb(255, 85, 0);
+    }
+        .cars{
+            width: 400px;
+            height: 0px;
+            visibility: hidden;
+        }
+        .remove{
+            width: 50px;
+            height: 0px;
+            margin-right: 50px;
+            visibility: hidden;
+        }
+    }
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+    button{
+        width: 200px;
+        height: 45px;
+        margin: 10px;
+    }
+
+}
+#back{
+    color: rgb(255, 85, 0);
+    background-color: white;
+    border:0.3px solid rgb(255, 85, 0) ;
+    &:hover{
+        color: rgb(255, 85, 0);
+        background-color: rgb(0, 0, 0);
+        border:0.3px solid rgb(255, 85, 0) ;
+    }
+}
+#checkout{
+    color: white;
+    background-color: rgb(255, 85, 0);
+    border:0.3px solid white ;
+    &:hover{
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 85, 0);
+        border:0.3px solid rgb(0, 0, 0) ;
+    }
+}

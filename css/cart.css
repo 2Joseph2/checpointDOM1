@@ -15,6 +15,7 @@ h1 {
   padding: 25px;
   margin-bottom: 25px;
   height: 100px;
+  color: rgb(255, 85, 0);
 }
 
 .box-header {
@@ -59,13 +60,101 @@ h1 {
 .box .item .like {
   width: 50px;
   height: 50px;
+  font-size: 50px;
 }
 .box .item .cars {
   width: 400px;
   height: 200px;
 }
+.box .qt form input {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  text-align: center;
+  border: none;
+  color: white;
+  background-color: black;
+}
 .box .remove {
   width: 50px;
   height: 50px;
   margin-right: 50px;
+  font-size: 50px;
+}
+.box:hover {
+  background-color: black;
+  color: rgb(255, 85, 0);
+}
+
+.box-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 25px;
+  margin-bottom: 45px;
+}
+.box-footer .item {
+  visibility: hidden;
+  margin-left: 50px;
+}
+.box-footer .item .like {
+  width: 50px;
+  height: 0px;
+  visibility: hidden;
+}
+.box-footer .price {
+  color: rgb(255, 85, 0);
+}
+.box-footer .cars {
+  width: 400px;
+  height: 0px;
+  visibility: hidden;
+}
+.box-footer .remove {
+  width: 50px;
+  height: 0px;
+  margin-right: 50px;
+  visibility: hidden;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+footer button {
+  width: 200px;
+  height: 45px;
+  margin: 10px;
+}
+
+#back {
+  color: rgb(255, 85, 0);
+  background-color: white;
+  border: 0.3px solid rgb(255, 85, 0);
+}
+#back:hover {
+  color: rgb(255, 85, 0);
+  background-color: rgb(0, 0, 0);
+  border: 0.3px solid rgb(255, 85, 0);
+}
+
+#checkout {
+  color: white;
+  background-color: rgb(255, 85, 0);
+  border: 0.3px solid white;
+}
+#checkout:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 85, 0);
+  border: 0.3px solid rgb(0, 0, 0);
 }
